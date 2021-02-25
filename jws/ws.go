@@ -71,5 +71,7 @@ func StartWSServer() {
 	err := http.ListenAndServe(addr, nil)
 	if err != nil {
 		log.Println("WS监听失败：" + err.Error())
+	}else{
+		log.Println("WS监听成功："+addr)
 	}
 }
